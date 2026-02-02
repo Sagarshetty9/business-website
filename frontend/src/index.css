@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A1F16;
+  --color-secondary: #1E3F20;
+  --color-accent: #345830;
+  --color-surface: #4A7856;
+  --color-muted: #94ECBE;
+  --font-sans: "MelonPop", sans-serif;
+}
+
+@font-face {
+  font-family: 'MelonPop';
+  src: url('./assets/fonts/MelonPop.ttf') format('truetype');
+  font-weight: light;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: var(--font-sans);
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
