@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(Cors({ origin: 'http://localhost:5173' }));
 
+app.get('/', (req, res) => {
+  res.send('API is running....');
+});
+
 app.use('/contact-us', router);
 
 app.listen(PORT, () => {
