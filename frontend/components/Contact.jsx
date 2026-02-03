@@ -13,7 +13,7 @@ const [phone, setPhone] = useState('')
     e.preventDefault()
     setStatus('loading')
     try {
-      await axios.post('http://localhost:5069/contact-us', {name, email, phone});
+      await axios.post('https://business-website-h3ns-git-main-sagarshetty9s-projects.vercel.app/contact-us', {name, email, phone});
       setStatus('success')
       setName('')
       setEmail('')
