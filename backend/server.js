@@ -11,7 +11,7 @@ await connectDb();
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
-app.use(Cors({ origin: 'http://localhost:5173' }));
+app.use(Cors({ origin: '*' }));
 
 app.get('/', (req, res) => {
   res.send('API is running....');
