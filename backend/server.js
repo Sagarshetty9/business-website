@@ -11,7 +11,7 @@ await connectDb();
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
-app.use(Cors({ origin: 'https://business-website-frontend-green.vercel.app' }));
+app.use(Cors({ origin: ['https://business-website-frontend-green.vercel.app',' http://localhost:5173'] }));
 
 app.get('/', (req, res) => {
   res.send('API is running....');
